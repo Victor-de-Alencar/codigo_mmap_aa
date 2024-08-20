@@ -7,7 +7,7 @@
 
 int main() {
     // Abrir o arquivo
-    int arquivo = open("./biblia.txt", O_RDONLY);
+    int arquivo = open("./biblia.txt", O_RDONLY); // Se quiser testar com um arquivo diferente terá que mudar o nome do txt nesta linha de código
     if (arquivo == -1) {
         perror("Erro ao abrir o arquivo");
         exit(EXIT_FAILURE);
